@@ -27,7 +27,7 @@ By the end of this session, learners will:
 
 1. Azure AI Search
 1. Azure Database for PostgreSQL
-1. Azure AI Foundry
+1. Microsoft Foundry
 1. Azure OpenAI
 1. Cohere Re-ranker
 
