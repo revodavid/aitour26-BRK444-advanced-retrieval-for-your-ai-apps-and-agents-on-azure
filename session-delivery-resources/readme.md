@@ -55,6 +55,12 @@ To be able to show the demos yourself, you will need to set up the three codebas
     az login --tenant <your-deployment-tenant-id>
     ```
 
+2. Accept the terms required for deployment of the Cohere rerank model:
+
+    ```bash
+    az term accept --publisher cohere --product cohere-rerank-v3-5-offer --plan cohere-rerank-v3-5-plan
+    ```
+
 3. Deploy the necessary infrastructure:
 
     ```bash
