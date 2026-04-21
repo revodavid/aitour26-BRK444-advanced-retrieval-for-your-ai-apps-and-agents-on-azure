@@ -90,7 +90,20 @@ To be able to show the demos yourself, you will need to set up the three codebas
     python ./scripts/hybrid_ranker_search.py
     ```
 
-8. Install the PostgreSQL extension for VS Code and create a new server connection for the provisioned Azure PostgreSQL server. Navigate to zava database, open the retail schema, and use the context menu to visualize the schema.
+8. Install the PostgreSQL extension for VS Code and create a new server connection for the provisioned Azure PostgreSQL server:
+
+    * Click the PostgreSQL incon in the sidebar
+    * Click "+ Add Connection"
+    * Fill in the connection details from your .env
+      * Server name: POSTGRES_SERVER_FQDN
+      * Username: POSTGRES_SERVER_USERNAME
+      * Password: create a temporary one with
+        * `az account get-access-token --resource https://ossrdbms-aad.database.windows.net --query accessToken -o tsv`
+      * Database name: zava
+      * Connection name: zava 
+    * Click "Save and Connect"
+
+Navigate to zava database, open the retail schema, and use the context menu to visualize the schema.
 
 #### Agentic Shop
 
