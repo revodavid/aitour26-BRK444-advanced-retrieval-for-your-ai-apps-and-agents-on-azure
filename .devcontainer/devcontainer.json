@@ -11,7 +11,16 @@
 		"ghcr.io/devcontainers/features/node:1": {
 			"version": "lts"
 		},
+		"ghcr.io/azure/azure-dev/azd:latest": {},
 		"ghcr.io/devcontainers/features/copilot-cli:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"ms-ossdata.vscode-pgsql"
+			]
+		}
 	},
 	"postCreateCommand": "sudo apt-get update && sudo apt-get install -y postgresql-client && mkdir -p ~/.copilot && echo '{\"mcpServers\":{\"azure\":{\"type\":\"local\",\"command\":\"npx\",\"args\":[\"-y\",\"@azure/mcp@latest\",\"server\",\"start\"],\"tools\":[\"*\"]}}}' > ~/.copilot/mcp-config.json"
 }

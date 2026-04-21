@@ -113,9 +113,10 @@ Navigate to zava database, open the retail schema, and use the context menu to v
     cd postgres-agentic-shop
     ```
 
-2. Create a new azd environment:
+2. Log into azd and create a new azd environment:
 
     ```bash
+    azd auth login
     azd env new
     ```
 
