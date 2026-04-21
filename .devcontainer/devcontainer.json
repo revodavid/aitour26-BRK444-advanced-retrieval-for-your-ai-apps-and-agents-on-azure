@@ -13,5 +13,5 @@
 		},
 		"ghcr.io/devcontainers/features/copilot-cli:1": {}
 	},
-	"postCreateCommand": "sudo apt-get update && sudo apt-get install -y postgresql-client"
+	"postCreateCommand": "sudo apt-get update && sudo apt-get install -y postgresql-client && mkdir -p ~/.copilot && echo '{\"mcpServers\":{\"azure\":{\"type\":\"local\",\"command\":\"npx\",\"args\":[\"-y\",\"@azure/mcp@latest\",\"server\",\"start\"],\"tools\":[\"*\"]}}}' > ~/.copilot/mcp-config.json"
 }
