@@ -156,10 +156,10 @@ Navigate to zava database, open the retail schema, and use the context menu to v
 
     You can also choose to enable the Sharepoint source, but then that requires enabling user login, a longer process which may not be feasible on all demo tenants.
 
-4. Copy all the files from the `session-delivery-resources/zava-data` folder into the `data` folder of the azure-search-openai-demo repo:
+4. Copy all the files from the `src/zava-data` folder into the `data` folder of the azure-search-openai-demo repo:
 
     ```bash
-    cp -r ../session-delivery-resources/zava-data/* ./data/
+    cp -r ../src/zava-data/* ./data/
     ```
 
 5. Provision the Azure resources and deploy the app:
